@@ -1,0 +1,8 @@
+---
+- hosts: mailcow
+  vars:
+    mailcow__timezone: Europe/Berlin
+  roles:
+    - docker-ce
+    - docker-compose
+    - mailcow
